@@ -1,3 +1,10 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
 :root{
   --primary-color: #1a202c;
   --secondary-color: #3182ce;/*نفس الحوار متغير حاجزه بالاسم*/
@@ -14,6 +21,8 @@
 }
 
 body {
+  width: 100%svw;
+  height: 100%svh;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -34,6 +43,7 @@ header {
   opacity: 0; /* بداية الشفافية */
   transform: translateY(50px);
   animation: fadeSlideIn 3s ease-in-out forwards; 
+  font-family: cursive;
 }
 
 @keyframes fadeSlideIn {
@@ -60,14 +70,15 @@ nav ul {
   gap: 20px;/*المسافات بين العناصر متساوية*/
 }
 ul li {
-  background-color: var(--ul-background);
+  background-color: white;
   padding: 12px;
   margin: 6px 0;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);/*لون الظل الظل*/
 }
 nav ul li a {
-  color: #2c3e50;;
+  font-family: cursive;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
